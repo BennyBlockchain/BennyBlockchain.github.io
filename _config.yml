@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Silver Surfer Blog
+title: Silver Surfer Blog 2021
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   The software is being developed to provide professors who utilize the CS department Silver Server for their webpages. It will provide a working, usable template for professors to use so all pages on Silver will be functional and similar in layout. This will make it easier for students to find what they need, and it will be easier for professors to communicate with students.
