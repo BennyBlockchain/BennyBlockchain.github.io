@@ -34,6 +34,12 @@ url: "https://silver-surfer.styng.social" # the base hostname & protocol for you
 twitter_username:
 github_username: BennyBlockchain
 
+excerpt_length: 50 
+
+feed_show_excerpt: true 
+
+feed_show_tags: true 
+
 # Build settings
 theme: minima
 plugins:
