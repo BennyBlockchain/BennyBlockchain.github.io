@@ -24,9 +24,6 @@ title: Silver Surfer Blog 2021
 # Appears in the footer 
 author: Faith Haiss, Amanda Hegidus, Ben Schroth, Marisa Stover 
 
-
-
-
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   The software is being developed to provide professors who utilize the CS department Silver Server for their webpages. 
@@ -43,9 +40,7 @@ plugins:
   - jekyll-feed
 
 
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
