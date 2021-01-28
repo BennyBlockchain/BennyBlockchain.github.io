@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Silver Surfer Project 
+title: Silver Surfer Blog 2021
 subtitle: This project is to update the current Silver Server in the Computer Science department. 
 --- 
