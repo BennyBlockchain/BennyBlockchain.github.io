@@ -41,6 +41,11 @@ github_username: BennyBlockchain
 theme: minima
 plugins:
   - jekyll-feed
+
+
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
