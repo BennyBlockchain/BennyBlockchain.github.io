@@ -25,10 +25,10 @@ title: Silver Surfer Blog 2021
 author: Faith Haiss, Amanda Hegidus, Ben Schroth, Marisa Stover 
 
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  The software is being developed to provide professors who utilize the CS department Silver Server for their webpages. 
-  It will provide a working, usable template for professors to use so all pages on Silver will be functional and similar in layout. 
-  This will make it easier for students to find what they need, and it will be easier for professors to communicate with students.
+#description: >- # this means to ignore newlines until "baseurl:"
+  #The software is being developed to provide professors who utilize the CS department Silver Server for their webpages. 
+  #It will provide a working, usable template for professors to use so all pages on Silver will be functional and similar in layout. 
+  #This will make it easier for students to find what they need, and it will be easier for professors to communicate with students.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://silver-surfer.styng.social" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
