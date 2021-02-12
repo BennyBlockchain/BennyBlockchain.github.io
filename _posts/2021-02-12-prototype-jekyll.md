@@ -9,5 +9,5 @@ We spent some time this week creating prototypes of what we would like the final
 visuals for ourselves and others to see and refer to from time to time. While the final product will not look exactly like this it is still 
 a guidepost for our development process. 
 
-![prototypes3](/assets/img/prototypes3 "Major Screen")
+![prototypes3](/assets/img/prototypes3.png "Major Screen")
 
