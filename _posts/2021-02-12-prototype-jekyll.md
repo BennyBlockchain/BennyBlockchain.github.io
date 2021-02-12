@@ -11,6 +11,9 @@ a guidepost for our development process.
 
 *More images to come! 
 
-![welcomeScreen](/assets/img/welcomePrototype.png "Major Screen")
+![welcomeScreen](/assets/img/welcomePrototype.png "Welcome Screen")
+
+![welcomeMenu](/assets/img/welcomeMenu.png "Menu Option Screen")
+
 ![prototypes3](/assets/img/prototypes3.png "Major Screen")
 
