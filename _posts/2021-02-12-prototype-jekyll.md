@@ -12,5 +12,5 @@ a guidepost for our development process.
 *More images to come! 
 
 
-![prototypes3](/_assets/_img/prototypes3.png){:class "img-responsive"}
+![prototypes3](/_assets/_img/prototypes3.png){:class="img-responsive"}
 
