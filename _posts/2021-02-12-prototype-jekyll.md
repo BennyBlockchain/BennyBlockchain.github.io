@@ -15,5 +15,11 @@ a guidepost for our development process.
 
 ![welcomeMenu](/assets/img/welcomeMenu.png "Menu Option Screen")
 
+![dropDownScreen](/assets/img/welcomeDropDown.png "DropDown Menu Screen")
+
+![classScreen](/assets/img/prototypes2.png "Class Screen")
+
 ![prototypes3](/assets/img/prototypes3.png "Major Screen")
+
+![adminPortal](/assets/img/adminPrototype.png "Admin Screen")
 
