@@ -9,7 +9,8 @@ We spent some time this week creating prototypes of what we would like the final
 visuals for ourselves and others to see and refer to from time to time. While the final product will not look exactly like this it is still 
 a guidepost for our development process. 
 
-*More images to come! 
+
+
 
 ![welcomeScreen](/assets/img/welcomePrototype.png "Welcome Screen")
 
