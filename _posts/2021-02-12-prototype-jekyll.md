@@ -10,6 +10,8 @@ visuals for ourselves and others to see and refer to from time to time. While th
 a guidepost for our development process. 
 
 ![Welcome Prototype](/assets/img/welcomePrototype.png "Welcome Screen")
+<li>
+</li>
 ![prototypes3](/assets/img/prototypes3.png "Major Screen")
 
 
