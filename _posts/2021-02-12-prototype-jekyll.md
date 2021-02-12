@@ -11,3 +11,5 @@ a guidepost for our development process.
 
 ![prototypes3](/assets/img/prototypes3.png "Major Screen")
 
+<img src="/assets/img/prototypes3.png" alt="Computer Sciene Major Screen"/>
+
