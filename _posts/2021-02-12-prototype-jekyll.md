@@ -12,5 +12,5 @@ a guidepost for our development process.
 *More images to come! 
 
 
-![prototypes3]({{site.url}}/assets/img/prototypes3.png "Major Screen")
+![prototypes3](/assets/img/prototypes3.png "Major Screen")
 
