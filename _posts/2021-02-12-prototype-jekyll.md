@@ -11,7 +11,6 @@ a guidepost for our development process.
 
 
 ![welcomePrototype](/assets/img/welcomePrototype.png "Welcome Screen")
-<br>
-</br>
+
 ![prototypes3](/assets/img/prototypes3.png "Major Screen")
 
