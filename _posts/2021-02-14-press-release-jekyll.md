@@ -6,12 +6,10 @@ categories: jekyll update
 ---
 
 
-![logo](/assets/img/silver-surfer.png "Silver Surfer Logo")
+![logo](/assets/img/silver-surfer.png:img?width=300 "Silver Surfer Logo")
 
 
-Silver Foxes, a software development team affiliated with the Spring 2021 Software Engineering course at the University of Mount Union, announces the 
-
-Silver Surfer Project!
+Silver Foxes, a software development team affiliated with the Spring 2021 Software Engineering course at the University of Mount Union, announces the Silver Surfer Project!
 
 The project is a web application for professors in the UMU CS department to use to create websites for their classes. The application provides a text area into which professors enter their content and provides a complete website for them to use. Our template will automatically surround their content with HTML and CSS styling.
 
