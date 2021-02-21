@@ -269,6 +269,6 @@ NameCard.args = {
 
 These JS files created a Query component and created two variations of the component. Variations are created by passing props the the components. You could also create variations such as themes, this is beneficial because we could have light mode and dark mode ready when the code is finished on the back end.
 
-## Coclusion
+## Conclusion
 
 This blog served as documentation and inspiration for the structure and dev ops of the Silver Surfer App. Next blog will cover setting up a local dev environment and Git & GitHub practices for branches, commits, pull requests, and naming conventions.
