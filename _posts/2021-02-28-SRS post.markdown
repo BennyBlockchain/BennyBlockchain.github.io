@@ -1,0 +1,10 @@
+---
+layout: post
+title: "SRS Document"
+date: 2021-02-28 7:30:00 -0500
+categories: jekyll update
+---
+
+Below is the Silver Foxes Software Requirements Specification (SRS) document. 
+
+![SRS](/assets/img/SRS doc "Silver Surfer SRS")
