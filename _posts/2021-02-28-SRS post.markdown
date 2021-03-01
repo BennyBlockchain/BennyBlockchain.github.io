@@ -7,4 +7,4 @@ categories: jekyll update
 
 Below is the Silver Foxes Software Requirements Specification (SRS) document. 
 
-![SRS](/assets/img/SRS doc.pdf "Silver Surfer SRS")
+![SRS doc](/assets/img/SRS doc.pdf)
