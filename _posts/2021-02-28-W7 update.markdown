@@ -1,0 +1,9 @@
+---
+layout: post
+title: "SRS Document"
+date: 2021-02-28 8:30:00 -0500
+categories: jekyll update
+---
+
+# Week 7 Update
+This week for the Silver Foxes has been focused on getting everyone's code working. Faith and Amanda were focused on getting their command line terminal connection working. Marisa and Ben were working on the database connection, which has been pushed to their Monday meeting this week so everyone can be involved. This week's deliverable has been the Design Document 1 rough draft. 
