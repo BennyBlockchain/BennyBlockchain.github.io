@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SRS Document"
+title: "Week 7 Update"
 date: 2021-02-28 8:30:00 -0500
 categories: jekyll update
 ---
