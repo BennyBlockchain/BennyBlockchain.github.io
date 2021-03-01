@@ -5,6 +5,4 @@ date: 2021-02-28 7:30:00 -0500
 categories: jekyll update
 ---
 
-Below is the Silver Foxes Software Requirements Specification (SRS) document. 
-
-[SRS doc](/assets/img/SRS doc.pdf)
+You can read the Silver Foxes Software Requirements Specification (SRS) document here [SRS doc](/assets/img/SRS doc.pdf).
