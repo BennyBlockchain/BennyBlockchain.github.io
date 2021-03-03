@@ -1,0 +1,131 @@
+---
+layout: post
+title:  "Next-Auth Initialization | Ben Schroth"
+date:   2021-03-03 21:29:00 -0500
+categories: jekyll update
+---
+
+# Authentication in Silver Surfer
+#### *****Detailed documentation can be found in the [Silver Surfer repo](https://github.com/BennyBlockchain/silver-surfer).*****
+### Background
+Professors must be authenticated to create, edit, and publish pages on Silver Surfer. Next.js offers a fantastic OAuth2 library for connecting to different providers such as Twitter, GitHub, LinkedIn, etc.
+###  **next-auth**
+\
+![next-auth](https://next-auth.js.org/img/social-media-card.png)\
+\
+Originally we were going to authenticate professors by email and send a magic link to access the admin page. In development I found a few issues with this approach.
+- Professors must leave the flow of the app to access admin through their email.
+- Database & app logic must be implemented to white list professors only.
+- Bad actors could spam the professors email by sending log in requests.
+- The flow of adding proffesors requires manual input from the developer.
+
+To alleviate these potential problems, I opted to use the Auth0 provider from next-auth.
+Auth0 provides authentication on the app level. Instead of logging in through a magic link, professors will be provided a log in for Silver Surfer that allows them to authenticate in the app. This is also a better practice because it avoids the potential issue of bad actors spamming the email authentication. You can also configure database instances, JWT distribution, and lifetime of access tokens.
+
+#### Auth0 flow
+![auth0](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.auth0.com%2Fblog%2Femea-saas%2Fauth0-architecture-2.png&f=1&nofb=1)
+
+## next-auth in Silver Surfer repo
+### **API**
+next-auth is initialized in `/api/auth/[...nextauth].js`. This declared the providers (Auth0 in our case) and handles the login flow referenced in the picture above.
+
+```
+/api/auth/[...nextauth].js
+
+import NextAuth from "next-auth";
+import Providers from "next-auth/providers";
+
+export default NextAuth({
+  site: process.env.NEXTAUTH_URL,
+  providers: [
+    Providers.Auth0({
+      clientId: process.env.AUTH0_CLIENT_ID,
+      clientSecret: process.env.AUTH0_CLIENT_SECRET,
+      domain: process.env.AUTH0_DOMAIN,
+    }),
+  ],
+});
+```
+
+Next-auth provides a session object that can be accessed in any page/component of the application. The session object contains the following information:
+```
+{
+  user: {
+    name: string,
+    email: string,
+    image: uri
+  },
+  accessToken: string,
+  expires: "YYYY-MM-DDTHH:mm:ss.SSSZ"
+}
+```
+To access the session object in all pages, we must wrap the app with a provider to pass the session prop to all child components. In Next.js, this is done in the `pages/_app.js` file. The app is wrapped with `Provider from "next-auth/client"`. The provider has a single prop of session that is passed directly to the app component as a golobal prop to be accessed.
+```
+/pages/_app.js
+
+import { Provider } from "next-auth/client";
+
+export default function App({ Component, pageProps }) {
+  return (
+    <Provider session={pageProps.session}>
+      <Component {...pageProps} />
+    </Provider>
+  );
+}
+```
+
+### **Session object in component**
+The session object is available throughout the app with the `useProvider from "next-auth/client"` hook. Authentication is only needed on the `/admin/[slug]` pages and the next-auth `Provider` makes it simple to require authentication per page. In the [repo](https://github.com/BennyBlockchain/silver-surfer), you can see authentication per page in action when comparing `/pages/index.js` vs. `pages/admin/index.js`. 
+```
+/pages/index.js
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Silver Surfer</title>
+      </Head>
+      <Main />
+    </>
+  );
+}
+```
+```
+/pages/admin/index.js
+
+import { useSession } from "next-auth/client";
+
+export default function admin() {
+  const [session, loading] = useSession();
+
+  if (typeof window !== "undefined" && loading) return null;
+
+  return (
+    <>
+      <Head>
+        <title>Admin | Silver Surfer</title>
+      </Head>
+      {!session && (
+        <>
+          <Login />
+        </>
+      )}
+      {loading && <h1>Loading...</h1>}
+      {session && (
+        <>
+          <h1>{`Session token: ${JSON.stringify(session.user)}`}</h1>
+        </>
+      )}
+    </>
+  );
+}
+```
+You can see that `/pages/index.js` does not have a check for a session. This means that authorized and unauthorized users have access to that page. In `/pages/admin/index.js`, the `useSession` function is used as a gateway for access to the admin page.
+`useSession` return two pieces of data. The `session` object and a `loading` state for smooth transitions of rendering data. The logic inside the return function has three checks.
+* If `session` does not exist, direct the user to the log in page.
+* If `useSession` is loading, display a spinner or loading text.
+* If the `session` object exists, display the admin page.
+
+### Conclusion
+next-auth offers a great developer experience for handling user authentication. It is very configurable and the granular authentication is fantastic for our project. Next-auth is implemented as a starting point currently. Future development will include UI for next-auth and enabling authentication to pages behind the `/admin` path.
+
