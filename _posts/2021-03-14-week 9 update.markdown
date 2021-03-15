@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Week 9 update"
-date:   2021-03-17 21:29:00 -0500
+date:   2021-03-14 10:00:00 -0500
 categories: jekyll update
 ---
 
