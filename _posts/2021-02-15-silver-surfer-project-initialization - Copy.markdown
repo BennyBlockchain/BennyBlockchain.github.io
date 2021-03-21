@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Silver Surfer Project Initialization | Ben Schroth"
+title: "Silver Surfer Project Initialization"
 date: 2021-02-15 8:05:00 -0500
 categories: jekyll update
 ---
