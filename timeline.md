@@ -69,7 +69,8 @@ March:
 
 	3/31 Status Meeting/Presentation (prototype due)
 
-April 
+April: 
+
 	4/5 - 4/11 Aesthetic Improvements 
 
     4/7 Press Release #2 Rough Draft 
@@ -87,5 +88,7 @@ April
 
 Intial Schedule: 
 ![schedule](/assets/img/schedule.png "Schedule")
+
+
 
 [Updated Work Breakdown Schedule](/assets/img/StatusMeetingBreakdown.xlsx)
