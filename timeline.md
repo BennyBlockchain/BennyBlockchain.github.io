@@ -24,17 +24,22 @@ February:
 
 	2/15 Press Release Final Draft 
 
+	2/15 - 2/21 Creating Database Schema 
+
 	2/17 Schedule Final Draft 
 
 	2/15 - 2/21 Database Schema 
 
-	2/15 - 2/28 Building React Components/Pages
+	2/15 - 3/7 Building Next.js Pages 
+
+	2/15 - 4/4 Building React Components 
 
 	2/22 Intro Presentation 
 
-	2/22 - 2/28 Designing API
+    2/22 - 3/7  Login Authentication
 
-    2/22 - 3/7  Layout for creating/editing pages
+	2/22 - 3/7 Layout for creating/editing pages
+
 
 March: 
 
@@ -42,13 +47,21 @@ March:
 
 	3/1 - 3/7 Admin panel for adding/editing pages 
 
+	3/7 - 3/14 Designing API
+
 	3/8  #1 Design Doc Final Draft 
 
-	3/8 - 3/14 Basic Web Page Development
+	3/8 - 4/11 Basic Web Page Development
+
+	3/8 - 3/14 Phase 1 Testing 
 
 	3/15 Midterm
 
-	3/22 Design Doc #2 Rough Draft 
+	3/22 Design Doc #2 Rough Draft
+
+	3/22 - 4/11  Admin Panel for editing/creating pages 
+
+	3/22 - 4/18 Adding React Components (Ongoing Activity)
 
 	3/29 Design Doc #2 Final Draft 
 
@@ -71,4 +84,8 @@ April
     
 	4/28 Final Report Due 
 
+
+Intial Schedule: 
 ![schedule](/assets/img/schedule.png "Schedule")
+
+[Updated Work Breakdown Schedule](/assets/img/StatusMeetingBreakdown.xlsx)
