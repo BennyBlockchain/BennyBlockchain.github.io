@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Status Meeting Recap"
+title:  "Faculty Page Up"
 date:   2021-04-03 16:26:00 -0500
 categories: jekyll update
 ---
