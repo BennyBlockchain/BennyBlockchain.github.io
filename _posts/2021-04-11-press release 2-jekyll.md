@@ -8,4 +8,4 @@ categories: jekyll update
 Silver Foxes would like to share our second and final press release! Check it out:
 
 
-![press release](/assets/img/PR 2.pdf "Press Release 2")
+[press release](/assets/img/PR 2.pdf "Press Release 2")
